@@ -35,5 +35,29 @@ const myfunction=function(){
 console.log(typeof bigNumber);
 console.log(typeof outsideTemp);
 
+//****************************MEMORY *****************
+
+//STACK (Primitive) == by copy   and HEAP(Non Primitive)== by refernce
+
+let myName="kavya"
+let anotherName=myName
+anotherName="silky"
+
+console.log(myName);
+console.log(anotherName);
+
+let userOne={
+    email:"kavya@gmail.com",
+    upi:"kavya123"
+}
+let userTwo=userOne  // same referece as userone
+
+userTwo.email="silky@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+
 
 
